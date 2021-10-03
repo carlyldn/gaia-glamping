@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 body {
 font-family: Raleway;
-padding: 5%;
+/* padding: 5%; */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -181,11 +181,16 @@ footer p {
 
 @media (max-width: 48em) {
 
-    .hide-sm { display: none; }
-    .flex-flip-sm { flex-direction: column-reverse; }
+    .hide-sm {display: none;}
+
+    .flex-flip-sm {flex-direction: column-reverse;}
+
     h1 {font-size: 4rem;}
     footer h2 {font-size: 3rem;}
-    .social-banner {background-image: none;
-                    background-color: #24282B;
-                    min-height: 30vh;}
+
+    .social-banner {
+        background-image: none;
+        background-color: #24282B;
+        min-height: 30vh;
+    }
 }
