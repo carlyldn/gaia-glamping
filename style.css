@@ -57,8 +57,17 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 /* Typography */
 
+@font-face {
+    font-family: 'Classico';
+    src: url('/fonts/classico-webfont.woff');
+    src: local('☺︎'),
+      url("/fonts/classico-webfont.woff") format("woff"),
+      url("/fonts/classico-webfont.woff2") format("woff2"),
+      url("/fonts/Classico.otf") format("truetype");
+    }
+
 body {
-font-family: Raleway;
+font-family: 'Classico';
 /* padding: 5%; */
 }
 
@@ -82,6 +91,12 @@ h3 {
 
 .not-bold {
     font-weight: 400;
+}
+
+.italic {font-style: italic;}
+
+.subtitle {
+    font-size: 2rem;
 }
 
 p, li {
@@ -141,28 +156,33 @@ footer p {
     background-image: url('/images/the-bunker-1.jpg');
 }
 
-.bg-roof {
-    background-image: url('/images/the-bunker-5.jpg');
+.bg-exterior {
+    background-image: url('/images/glamping-exterior.jpg');
 }
 
 .bg-bed {
-    background-image: url('/images/the-bunker-1.jpg');
+    background-image: url('/images/glamping-bedroom.jpg');
 }
 
-.bg-hallway {
-    background-image: url('/images/the-bunker-3.jpg');
+.bg-view {
+    background-image: url('/images/glamping-view.jpg');
 }
 
-.bg-lounge {
-    background-image: url('/images/the-bunker-4.jpg');
+.bg-chair {
+    background-image: url('/images/glamping-chair.jpg');
 }
 
-.bg-lounge-2 {
-    background-image: url('/images/the-bunker-2.jpg');
+.bg-cosy {
+    background-image: url('/images/glamping-cosy.jpg');
 }
 
-.bg-sheets {
-    background-image: url('/images/the-bunker-7.jpg');
+.bg-living {
+    background-image: url('/images/glamping-living-room.jpg');
+}
+
+.bg-bed-2 {
+    background-image: url('/images/glamping-bedroom-2.jpg');
+    background-position: 100%;
 }
 
 .bg-map {
