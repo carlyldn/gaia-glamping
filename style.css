@@ -135,6 +135,8 @@ a:hover {
     font-style: italic;
 }
 
+.logo {font-size: 3rem;}
+
 /* Footer Styles */
 
 footer h2 {
