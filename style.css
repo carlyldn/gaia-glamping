@@ -185,6 +185,9 @@ footer p {margin-bottom: 0.2rem;}
     h1 {font-size: 4rem;}
     footer h2 {font-size: 3rem;}
 
+    .logo {font-size: 3.5rem;}
+    .subtitle {font-size: 1rem;}
+
     .social-banner {
         background-image: none;
         background-color: #24282B;
