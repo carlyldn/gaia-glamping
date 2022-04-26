@@ -240,6 +240,7 @@ footer p {margin-bottom: 0.2rem;}
 @media (max-width: 80em) {
 
 .breadcrumbs {color: #f5f0ec;}
+.margin-t {margin-top: 15%;}
 }
 
 /* SM - max-width in pixels approximately 768px */
@@ -252,15 +253,14 @@ footer p {margin-bottom: 0.2rem;}
 
     h1 {font-size: 4rem;}
     footer h2 {font-size: 3rem;}
+    .logo {font-size: 3.5rem;}
+    .logo-footer {font-size: 1.5rem;}
 
     .sm-center {text-align: center;}
     .sm-right {text-align: right;}
 
     .sm-padded-0 {padding: 0;}
     .margin-t {margin-top: 25%;}
-
-    .logo {font-size: 3.5rem;}
-    .logo-footer {font-size: 1.5rem;}
 
     .breadcrumbs {
         font-size: 1rem;
