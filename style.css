@@ -234,8 +234,6 @@ footer p {margin-bottom: 0.2rem;}
     background-position: 100%;
 }
 
-.bg-padded {padding-bottom: 30%;}
-
 .social-banner {background-position: 50% 20%;}
 
 /* LG Gridlex */
@@ -258,14 +256,17 @@ footer p {margin-bottom: 0.2rem;}
     .sm-center {text-align: center;}
     .sm-right {text-align: right;}
 
+    .sm-padded-0 {padding: 0;}
     .margin-t {margin-top: 25%;}
 
     .logo {font-size: 3.5rem;}
     .logo-footer {font-size: 1.5rem;}
+
     .breadcrumbs {
         font-size: 1rem;
         top: 2%;
         left: 5%;}
+
     .subtitle {
         font-size: 1rem;
         margin-top: 5%
@@ -275,6 +276,8 @@ footer p {margin-bottom: 0.2rem;}
         width: 50px;
         height: 50px;
     }
+
+    .order-2 {order: 2;}
 
 
     .social-banner {
