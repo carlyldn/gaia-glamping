@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="90" viewBox="0 0 200 90">
+  <defs>
+    <clipPath id="clip-Custom_Size_1">
+      <rect width="200" height="90"/>
+    </clipPath>
+  </defs>
+  <g id="Custom_Size_1" data-name="Custom Size – 1" clip-path="url(#clip-Custom_Size_1)">
+    <line id="Line_1" data-name="Line 1" x2="96.295" y2="62" transform="translate(2.205 5.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" x1="96.3" y2="62" transform="translate(99.5 5.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-width="3"/>
+    <line id="Line_4" data-name="Line 4" x2="96.295" y2="62" transform="translate(2.205 19.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-width="3"/>
+    <line id="Line_5" data-name="Line 5" x1="96.3" y2="62" transform="translate(99.5 19.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-width="3"/>
+  </g>
+</svg>

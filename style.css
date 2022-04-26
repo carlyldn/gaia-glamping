@@ -12,7 +12,10 @@ font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid; */
 }
+
+html {scroll-behavior: smooth;}
 
 
 /* Temporary Styles */
@@ -44,17 +47,24 @@ h1,h2,h3,h4,h5,h6,p,a {
 .padded-1 {padding:1rem;}
 .padded-2 {padding: 2rem;}
 
+.margin-t {margin-top: 5%;}
 .margin-b-0 {margin-bottom: 0;}
 
 .bg-featured {background-color: #1C2A2C;}
 .bg-dark {background-color: #24282B;}
-.bg-light {color: ;}
 
 .light-text {color:white}
 
 .left {text-align: left}
 .center {text-align: center}
 .right {text-align: right}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Typography */
 
@@ -77,6 +87,13 @@ h1,h2,h3,h4,h5,h6,p,a {
         url("/fonts/MonteCarlo.otf") format("opentype");
     }
 
+    @font-face {
+        font-family: 'Culture';
+        src: url('/fonts/culture-bold-webfont.woff2') format('woff2'),
+             url('/fonts/culture-bold-webfont.woff') format('woff'),
+             url('/fonts/culture-bold-webfont.ttf') format('truetype');
+      }
+
 body {
     background-color: #f5f0ec;
     font-family: 'Classico';
@@ -96,9 +113,7 @@ h2 {font-size: 2.5rem;}
 h3 {font-size: 1.8rem;}
 
 .not-bold {font-weight: 400;}
-
 .italic {font-style: italic;}
-
 .subtitle {font-size: 2rem;}
 
 p, li {
@@ -113,18 +128,6 @@ li:last-child {
     margin-bottom: 0;
 }
 
-a {color: inherit;}
-
-nav a {text-decoration: none;}
-
-a:hover {color: #4e91ad;}
-
-.fab {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    margin: 
-}
-
 .subtle {
     opacity: 0.8;
     font-size: 0.9rem;
@@ -133,7 +136,65 @@ a:hover {color: #4e91ad;}
 
 .logo {font-size: 5.5vw;}
 .logo-footer {font-size: 3vw;}
-.subtitle {font-size: 2vw;}
+.subtitle {font-size: 2vw; margin-bottom: 2rem;}
+
+svg {color: white;}
+
+.down {
+    /* display: block;
+    position: absolute; */
+    margin-top: 10%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(277deg) brightness(103%) contrast(98%);
+    width: 100px;
+    height: 100px;
+}
+
+.bg-overlay {
+    position: relative;
+  }
+  
+  .bg-overlay::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .bg-overlay > * {
+    position: relative;
+  }
+
+/* Links & Navigation */
+
+a {color: inherit;}
+
+nav a {text-decoration: none;}
+
+a:hover {color: #4e91ad;}
+
+.breadcrumbs {
+    font-family: 'Culture', 'Monte Carlo', 'Classico', serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    color: #24282B;
+}
+
+.breadcrumbs a:hover {
+    border-bottom: 1px solid #24282B;
+    color: white;
+}
+
+.fab {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
 
 /* Footer Styles */
 
@@ -153,7 +214,10 @@ footer p {margin-bottom: 0.2rem;}
     background-repeat: no-repeat;
 }
 
-.bg-exterior {background-image: url('/images/glamping-exterior.jpg');}
+.bg-exterior {
+    background-image: url('/images/glamping-exterior.jpg');
+    min-height: 70vh;
+    color: white;}
 
 .bg-bed {background-image: url('/images/glamping-bedroom.jpg');}
 
@@ -174,6 +238,12 @@ footer p {margin-bottom: 0.2rem;}
 
 .social-banner {background-position: 50% 20%;}
 
+/* LG Gridlex */
+@media (max-width: 80em) {
+
+.breadcrumbs {color: #f5f0ec;}
+}
+
 /* SM - max-width in pixels approximately 768px */
 
 @media (max-width: 48em) {
@@ -188,9 +258,24 @@ footer p {margin-bottom: 0.2rem;}
     .sm-center {text-align: center;}
     .sm-right {text-align: right;}
 
+    .margin-t {margin-top: 25%;}
+
     .logo {font-size: 3.5rem;}
     .logo-footer {font-size: 1.5rem;}
-    .subtitle {font-size: 1rem;}
+    .breadcrumbs {
+        font-size: 1rem;
+        top: 2%;
+        left: 5%;}
+    .subtitle {
+        font-size: 1rem;
+        margin-top: 5%
+    }
+
+    .down {
+        width: 50px;
+        height: 50px;
+    }
+
 
     .social-banner {
         background-image: none;
