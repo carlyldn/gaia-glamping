@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 body {
     background-color: #F8F0E3;
-    font-family: 'Classico';
+    font-family: 'Classico', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -197,6 +197,57 @@ a:hover {color: #4e91ad;}
     padding-left: 1rem;
 }
 
+/* Newsletter sign up */
+
+input {
+    border-style: solid;
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
+    font-family: 'Classico', sans-serif;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #24282B;
+    /* featured color */
+  }
+  
+  textarea {
+    min-height: 7em;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+  
+  form [class*=col-] {
+    padding: 5px;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+    font-family: 'Classico', sans-serif;
+    text-transform: uppercase;
+  }
+  form .button {
+    width:100%;
+  }
+
 /* Footer Styles */
 
 footer h2 {
@@ -283,4 +334,9 @@ footer p {margin-bottom: 0.2rem;}
         background-color: #24282B;
         min-height: 30vh;
     }
+
+    .email-signup input {
+        width: 100%;
+        max-width: 100%;
+      }
 }
