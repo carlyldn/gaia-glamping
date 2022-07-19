@@ -15,7 +15,9 @@ font-family: 'Raleway', sans-serif;
     /* border: 1px solid; */
 }
 
-html {scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;}
 
 
 /* Temporary Styles */
@@ -98,6 +100,8 @@ h1,h2,h3,h4,h5,h6,p,a {
 body {
     background-color: #F8F0E3;
     font-family: 'Classico', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -305,7 +309,7 @@ footer p {margin-bottom: 0.2rem;}
 
     h1 {font-size: 4rem;}
     footer h2 {font-size: 3rem;}
-    .logo {font-size: 3.5rem;}
+    .logo {font-size: 3rem;}
     .logo-footer {font-size: 1.5rem;}
 
     .sm-center {text-align: center;}
@@ -338,5 +342,12 @@ footer p {margin-bottom: 0.2rem;}
     .email-signup input {
         width: 100%;
         max-width: 100%;
+      }
+
+      input {
+        text-align: center;
+        font-size: 1rem;
+        vertical-align: top;
+        font-family: 'Classico', sans-serif;
       }
 }
